@@ -122,6 +122,7 @@ body {
   text-align: center;
   align-items: center;
   color: #70c1b3;
+  /* background-color: blanchedalmond; */
 }
 
 .widget .extra-temp .extra-info-leftside {
@@ -143,6 +144,7 @@ body {
 
 .searchTerm {
   width: 50%;
+  /* border: 3px solid #00b4cc; */
   border: none;
   padding: 16px;
   height: 20px;
@@ -182,12 +184,82 @@ body {
 }
 
 /*Resize the wrap to see the search bar change!*/
+/* .wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
 .wrap {
   display: flex;
   flex-direction: column;
   margin-bottom: 3vh;
+  justify-content: center;
+  text-align: center;
+  margin-top: -150px;
+  /* margin-bottom: 50px; */
 }
 
-.wrap p{
-  color: #ffffffa1;
+.wrap p {
+  color: #ffffff82;
 }
+
+/* responsive */
+/* @media screen and (max-width: 600px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: -90%;
+    margin-bottom: 3vh;
+  }
+
+  .wrap p {
+    font-size: 9px;
+  }
+
+  .widget {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 550px;
+    width: 300px;
+  }
+
+  .widget .weatherIcon {
+    height: 20%;
+    font-size: 50px;
+  }
+
+  .widget .weatherInfo {
+    position: relative;
+    flex: 1 100%;
+    height: 200px;
+    margin-top: -16%;
+  }
+  .widget .weatherInfo .temperature {
+    flex: 1 100%;
+    font-size: 50px;
+  }
+  .widget .weatherInfo .description {
+    flex: 1 100%;
+  }
+  .widget .date {
+    flex: 1 100%;
+    margin-top: -15%;
+    height: 10%;
+    font-size: 20px;
+  }
+
+  to be continued
+  .widget .extra-temp {
+  flex: 1 100%;
+  height: 20%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  font-size: 100px;
+}
+} */
